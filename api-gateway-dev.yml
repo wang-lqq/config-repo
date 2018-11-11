@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: api-gateway
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/springcloud_sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+  # rabbitmq配置
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+eureka:
+  client:
+    service-url: 
+        defaultZone: http://localhost:8761/eureka/
+env: dev
